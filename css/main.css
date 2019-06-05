@@ -1,0 +1,70 @@
+#titulo {
+    font-size: 3em;
+    font-weight: bold;
+    color: green;
+}
+#titulo span {
+    color: gray;
+}
+@media screen and (max-width: 1000px){
+    #titulo {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px){
+    #ayuda {
+        display: none;
+    }
+}
+#mobileMenu {
+    font-size: 2em;
+}
+#hero {
+    background-image: url(../img/solar.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position:center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nice {
+    color: white;
+    text-shadow: 2px 2px 14px #000000;
+    font-size: 3rem;
+}
+@media screen and (max-width: 1500px){
+    .nice {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 1250px){
+    .nice {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1000px){
+    .nice {
+        font-size: 1.5rem;
+    }
+}
+#greenIcons i {
+    font-size: 3rem;
+}
+.parallax {
+    background-image: url(../img/renovables.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card i {
+    font-size: 3rem;
+}
+#os i {
+    font-size: 3rem;
+}
+footer nav i {
+    font-size: 2rem;
+}
