@@ -16,23 +16,27 @@
   <body>
     <header>
         <div class="container d-flex justify-content-between">
-            <div class="dropdown mt-2">
-                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-                    Hogar
-                </button>
-                <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Empresa</a>
-                    <a href="#" class="dropdown-item">Negocio</a>
-                    <a href="#" class="dropdown-item">Comunidad</a>
+            <div class="btn-group">
+                <button type="button" id="home" class="btn text-success font-weight-bold">Hogar</button>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-toggle="dropdown">
+                        
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item" id="company">Empresa</a>
+                        <a href="#comunidad" class="dropdown-item">Comunidad</a>
+                        <a href="#contacto" class="dropdown-item">Contacto</a>
+                    </div>
                 </div>
             </div>
-            <h1 id="titulo">Iber<span>Luz</span></h1>
+            <a href="index.html" class="nav-link"><h1 id="titulo">Iber<span>Luz</span></h1></a>
             <form action="#" class="form-inline" id="ayuda">
                 <input type="text" class="form-control mr-sm-2" placeholder="¿Necesitas ayuda?">
                 <button class="btn btn-secondary">Ayuda</button>
             </form>
-            <a href="#" class="nav-link"><button class="btn btn-success">Acceso Clientes</button></a>
+            <a href="login.html" class="nav-link"><button class="btn btn-success">Acceso Clientes</button></a>
         </div>
+
         <nav class="navbar navbar-expand-md bg-light justify-content-center">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span id="mobileMenu"><i class="fas fa-bars text-success"></i></span>
@@ -64,41 +68,70 @@
             </div>
         </nav>
     </header>
+
     <div class="container-fluid" id="hero">
         <h2 class="font-weight-bold nice">Explora formas inteligentes de suministrar energía a tu hogar</h2>
     </div>
+
     <main class="bg-light">
-        <div class="container py-5 text-center">
+        <div class="container py-5 text-center" id="hogar">
             <h2 class="text-success font-weight-bold">¿Paga demasiado por sus facturas de luz y gas?</h2>
             <img class="mx-auto d-block img-fluid" src="img/casas.jpg" alt="Diferentes casas equivalen a diferente consumo">
             <p class="my-4 lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus assumenda reprehenderit reiciendis ab deleniti libero cupiditate rerum minus magnam, accusantium illum non sunt, fuga deserunt. Explicabo consequatur iste in tenetur? Lorem ipsum dolor sit, amet consectetur adipisicing elit. At velit eum praesentium distinctio itaque sint accusamus vitae reprehenderit saepe ratione maxime cupiditate ab, facere neque atque libero adipisci, ipsa aliquam.</p>
-            <a href="#" class="nav-link"><button class="btn btn-success">Quiero saber más</button></a>
+            <a href="#comunidad" class="nav-link"><button class="btn btn-success">Quiero saber más</button></a>
         </div>
+
+        <div id="empresa">
+            <div class="container py-5 text-center" >
+                <h2 class="text-success font-weight-bold mb-4">Implemente soluciones energéticas a su negocio</h2>
+                <img src="img/ecobusiness.jpg" alt="Empresa respetuosa con el medio ambiente" class="mx-auto d-block img-fluid rounded">
+                <p class="my-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, odio dolorem! Laborum voluptas ullam cumque tempore sit voluptate delectus, quo laboriosam, excepturi explicabo autem possimus quibusdam exercitationem aliquid quasi hic? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, beatae quam eveniet sit quae distinctio, voluptate obcaecati culpa, odit sint illum modi laboriosam quod adipisci accusamus! Natus repudiandae a labore!</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="text-success">Nos adaptamos</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque recusandae optio quaerat sequi quia accusantium in mollitia distinctio, ipsam commodi, omnis minima? Labore consequuntur qui dolore, et consequatur repellendus consectetur!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-success">Soluciones ecológicas</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque recusandae optio quaerat sequi quia accusantium in mollitia distinctio, ipsam commodi, omnis minima? Labore consequuntur qui dolore, et consequatur repellendus consectetur!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="text-success">A tiempo</h3>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque recusandae optio quaerat sequi quia accusantium in mollitia distinctio, ipsam commodi, omnis minima? Labore consequuntur qui dolore, et consequatur repellendus consectetur!</p>
+                    </div>
+                </div>
+            </div>
+            <h2 class="text-success font-weight-bold mb-4 text-center">Tu puedes marcar la diferencia</h2>
+            <div class="container-fluid text-center d-flex justify-content-center align-items-center" id="diferencia">               
+                <p class="my-5 lead container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eius esse, quis facere sequi at architecto officia totam hic magni illo impedit? Dignissimos cupiditate quas culpa aliquam ipsum, laborum hic.</p>
+            </div>
+        </div>
+
         <div class="container-fluid bg-success text-center pb-4" id="greenIcons">
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <i class="fas fa-lock text-light mt-4"></i>
                     <h3 class="lead my-4">Seguridad</h3>
                     <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate saepe hic voluptatum, voluptatem totam ducimus harum rerum enim dolor, ab dolorem facere! Obcaecati maiores illum, officia quis laborum autem?</p>
-                    <a href="#" class="nav-link">Más</a>
+                    <a href="#" class="nav-link text-light">Más</a>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <i class="fas fa-leaf text-light mt-4"></i>
                     <h3 class="lead my-4">Medio Ambiente</h3>
                     <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate saepe hic voluptatum, voluptatem totam ducimus harum rerum enim dolor, ab dolorem facere! Obcaecati maiores illum, officia quis laborum autem?</p>
-                    <a href="#" class="nav-link">Más</a>
+                    <a href="#" class="nav-link text-light">Más</a>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <i class="fas fa-euro-sign text-light mt-4"></i>
                     <h3 class="lead my-4">Precio asequible</h3>
                     <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate saepe hic voluptatum, voluptatem totam ducimus harum rerum enim dolor, ab dolorem facere! Obcaecati maiores illum, officia quis laborum autem?</p>
-                    <a href="#" class="nav-link">Más</a>
+                    <a href="#" class="nav-link text-light">Más</a>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <i class="fas fa-lightbulb text-light mt-4"></i>
                     <h3 class="lead my-4">Se inteligente</h3>
                     <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate saepe hic voluptatum, voluptatem totam ducimus harum rerum enim dolor, ab dolorem facere! Obcaecati maiores illum, officia quis laborum autem?</p>
-                    <a href="#" class="nav-link">Más</a>
+                    <a href="#" class="nav-link text-light">Más</a>
                 </div>
             </div>
         </div>
@@ -108,10 +141,10 @@
             <p id="os"><i class="fab fa-android text-success"></i> <i class="fab fa-apple text-info"></i></p>
             <img src="img/movil.png" class="mx-auto d-block img-fluid" alt="Aplicación movil disponible en android e ios">
         </div>
-        <div class="container-fluid parallax text-center d-flex flex-column justify-content-center align-items-center">
+        <div class="container-fluid parallax text-center d-flex flex-column justify-content-center align-items-center" id="comunidad">
             <h2 class="font-weight-bold nice">Únete a nuestra comunidad</h2>
             <p class="text-light">Empieza a cuidar del Medio Ambiente a la vez que ahorras en tus facturas</p>
-            <a href="#" class="btn btn-light">Acceso</a>
+            <a href="login.html" class="btn btn-light">Acceso</a>
         </div>
         <div class="container py-5 text-center">
             <h2 class="text-success font-weight-bold mb-4">Testimonios</h2>
@@ -133,7 +166,7 @@
             </div>
         </div>
     </main>
-    <div class="container py-5 text-center">
+    <div class="container py-5 text-center" id="contacto">
         <h2 class="text-success font-weight-bold mb-4">Contacto</h2>
         <form action="#">
             <div class="form-group">
@@ -190,6 +223,7 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <script src="js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

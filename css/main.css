@@ -1,9 +1,12 @@
-#titulo {
+/* Principal */
+#titulo,
+#title {
     font-size: 3em;
     font-weight: bold;
     color: green;
 }
-#titulo span {
+#titulo span,
+#title span {
     color: gray;
 }
 @media screen and (max-width: 1000px){
@@ -48,6 +51,15 @@
         font-size: 1.5rem;
     }
 }
+#empresa {
+    display: none;
+}
+#diferencia {
+    background-image: url(../img/empresa.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
 #greenIcons i {
     font-size: 3rem;
 }
@@ -67,4 +79,9 @@
 }
 footer nav i {
     font-size: 2rem;
+}
+
+/* Login */
+#registro {
+    display: none;
 }
