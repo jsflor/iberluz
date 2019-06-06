@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!--LeaftLet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <!--FontAwesome-->
     <script src="https://kit.fontawesome.com/ba8835893d.js"></script>
     <!-- Bootstrap CSS -->
@@ -16,7 +17,7 @@
   <body>
     <header>
         <div class="container d-flex justify-content-between">
-            <div class="btn-group">
+            <div class="btn-group" id="btnG">
                 <button type="button" id="home" class="btn text-success font-weight-bold">Hogar</button>
                 <div class="btn-group">
                     <button class="btn dropdown-toggle" data-toggle="dropdown">
@@ -32,9 +33,9 @@
             <a href="index.html" class="nav-link"><h1 id="titulo">Iber<span>Luz</span></h1></a>
             <form action="#" class="form-inline" id="ayuda">
                 <input type="text" class="form-control mr-sm-2" placeholder="¿Necesitas ayuda?">
-                <button class="btn btn-secondary">Ayuda</button>
+                <button id="help" class="btn btn-secondary">Ayuda</button>
             </form>
-            <a href="login.html" class="nav-link"><button class="btn btn-success">Acceso Clientes</button></a>
+            <a href="#" class="nav-link"><button id="btnClientes" class="btn btn-success">Acceso Clientes</button></a>
         </div>
 
         <nav class="navbar navbar-expand-md bg-light justify-content-center">
@@ -73,7 +74,7 @@
         <h2 class="font-weight-bold nice">Explora formas inteligentes de suministrar energía a tu hogar</h2>
     </div>
 
-    <main class="bg-light">
+    <main class="bg-light" id="main">
         <div class="container py-5 text-center" id="hogar">
             <h2 class="text-success font-weight-bold">¿Paga demasiado por sus facturas de luz y gas?</h2>
             <img class="mx-auto d-block img-fluid" src="img/casas.jpg" alt="Diferentes casas equivalen a diferente consumo">
@@ -188,6 +189,52 @@
             <button type="submit" class="btn btn-success">Enviar</button>
         </form>
     </div>
+    <div class="container-fluid" id="map" style="height: 500px"></div>
+    <section class="bg-light py-5" id="login">
+        <div class="container">
+            <div class="d-flex justify-content-center py-4">
+                <button type="button" class="btn btn-success mr-1" id="btnInicio">Inicia sesión</button> 
+                <button type="button" class="btn btn-success" id="btnRegistro">Regístrate</button> 
+            </div>           
+            <form class="py-5" id="inicio">
+                <h2 class="text-success font-weight-bold">Iniciar sesión</h2>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contraseña</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Recuerdame
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary"><a href="dashboard.html" class="nav-link text-light">Acceder</a></button>
+            </form> 
+            <form class="py-5" id="registro">
+                <h2 class="text-success font-weight-bold">Registro</h2>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Contraseña</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label for="tlf">Teléfono</label>
+                    <input type="number" class="form-control" id="tlf" min="0">
+                </div>
+                <button type="submit" class="btn btn-primary"><a href="dashboard.html" class="nav-link text-light">Registrar</a></button>
+            </form> 
+        </div>
+    </section>
     <footer>
         <div class="jumbotron mb-0">
             <nav class="navbar navbar-expand-sm justify-content-center">
@@ -223,6 +270,7 @@
     </footer>
 
     <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
     <script src="js/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
